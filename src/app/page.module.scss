@@ -1,0 +1,28 @@
+.main {
+	display: flex;
+	background-color: #0041f3;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px 30px;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		color: #d6abf9;
+		transform: scale(1.2);
+	}
+
+	&:disabled {
+		color: #ccc;
+		cursor: not-allowed;
+	}
+}
