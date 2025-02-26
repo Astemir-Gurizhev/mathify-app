@@ -1,13 +1,13 @@
 .main {
 	display: flex;
-	background-color: #0041f3;
+	background: linear-gradient(135deg, #0041f3, #00c6ff);
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
 .start {
-	background: #b266fe;
+	background: linear-gradient(135deg, #b266fe, #ff66b2, #66fe9b);
 	padding: 60px 200px;
 	border-radius: 10px;
 	display: flex;
@@ -44,7 +44,7 @@
 	transition: 0.3s;
 
 	&:hover {	
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 
 	&:disabled {
