@@ -5,9 +5,17 @@ import styles from './page.module.scss'
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			<Image src='/book.webp' alt='' width={150} height={150} />
 			<Link className={styles.btn} href='/'>
-				Start!
+				<div className={styles.start}>
+					<Image
+						className={styles.img}
+						src='/book.webp'
+						alt=''
+						width={100}
+						height={100}
+					/>
+					Start!
+				</div>
 			</Link>
 		</main>
 	)

@@ -3,21 +3,47 @@
 	background-color: #0041f3;
 	align-items: center;
 	justify-content: center;
-	gap: 5px;
+	flex-wrap: wrap;
 }
 
+.start {
+	background: #b266fe;
+	padding: 60px 200px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	transition: transform 0.3s ease;
+
+	&:hover {
+		animation: moveUpDown 0.6s ease-in-out infinite;
+	}
+}
+
+@keyframes moveUpDown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-2px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 .btn {
 	display: inline-block;
 	padding: 5px 30px;
-	font-size: 20px;
+	font-size: 30px;
+	text-transform: lowercase;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 0.3s;
 
-	&:hover {
-		color: #d6abf9;
+	&:hover {	
 		transform: scale(1.2);
 	}
 
