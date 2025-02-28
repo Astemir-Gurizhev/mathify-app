@@ -8,16 +8,23 @@
 
 .start {
 	background: linear-gradient(135deg, #b266fe, #ff66b2, #66fe9b);
-	padding: 60px 200px;
+	padding: 60px 250px;
 	border-radius: 10px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	gap: 10px;
 	transition: transform 0.3s ease;
+	cursor: pointer;
 
 	&:hover {
 		animation: moveUpDown 0.6s ease-in-out infinite;
+	}
+}
+
+@media (max-width: 680px) {
+	.start {
+		padding: 60px 100px;
 	}
 }
 
@@ -43,7 +50,7 @@
 	cursor: pointer;
 	transition: 0.3s;
 
-	&:hover {	
+	&:hover {
 		transform: scale(1.1);
 	}
 
