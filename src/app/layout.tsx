@@ -1,8 +1,9 @@
+import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
+import ReduxProvider from '@/components/redux-provider/ReduxProvider'
 import type { Metadata } from 'next'
 import { Geist_Mono } from 'next/font/google'
 import '../styles/globals.scss'
-import Footer from '@/components/footer/Footer'
 
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
@@ -23,9 +24,11 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${geistMono.variable}`}>
-				<Header />
-				{children}
-        <Footer />
+				<ReduxProvider>
+					<Header />
+					{children}
+					<Footer />
+				</ReduxProvider>
 			</body>
 		</html>
 	)
