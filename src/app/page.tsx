@@ -5,7 +5,7 @@ import styles from './page.module.scss'
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			<Link className={styles.btn} href='/'>
+			<Link className={styles.btn} href='/second'>
 				<div className={styles.start}>
 					<Image
 						className={styles.img}

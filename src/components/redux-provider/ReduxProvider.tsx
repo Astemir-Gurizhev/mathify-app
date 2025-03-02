@@ -8,7 +8,7 @@ interface ReduxProviderProps {
   children: ReactNode;
 }
 
-const ReduxProvider: React.FC<ReduxProviderProps> = ({ children }) => {
+const ReduxProvider  = ({ children }: ReduxProviderProps ) => {
   return <Provider store={store}>{children}</Provider>;
 };
 

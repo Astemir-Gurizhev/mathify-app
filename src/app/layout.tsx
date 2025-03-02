@@ -1,6 +1,5 @@
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
-import ReduxProvider from '@/components/redux-provider/ReduxProvider'
 import type { Metadata } from 'next'
 import { Geist_Mono } from 'next/font/google'
 import '../styles/globals.scss'
@@ -24,11 +23,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${geistMono.variable}`}>
-				<ReduxProvider>
-					<Header />
-					{children}
-					<Footer />
-				</ReduxProvider>
+				<Header />
+				{children}
+				<Footer />
 			</body>
 		</html>
 	)
